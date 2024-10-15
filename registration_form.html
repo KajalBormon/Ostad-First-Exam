@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgba(48, 119, 234, 0.772), rgb(68, 0, 141));
+        }
+        .heading{
+            text-align: center;
+            font-size: 30px;
+            padding-top: 0px;
+            margin-top: 0px;
+        
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .box{
+            background-color: white;
+            width: 650px;
+            height:310px;
+            padding: 30px;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+        label{
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input{
+            padding: 4px;
+        }
+        input[type='text'],
+        input[type='email'],
+        input[type='password']{
+            width: 200px;
+            height: 25px;
+            border-radius: 3px;
+            border-width: 1px;
+            border-color: rgb(161, 159, 159);
+        }
+        input[type='text']::placeholder,
+        input[type='email']::placeholder,
+        input[type='password']::placeholder{
+            color: rgb(70, 69, 69);
+              
+        }
+        .first,
+        .second,
+        .third,
+        .fourth{
+            margin-bottom: 14px;
+            margin-left: 20px;
+        }
+        .fourth{
+            margin-bottom: 30px;
+        }
+        .cancel{
+            margin-left: 20px;
+            margin-right: 6px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .submit{
+            background-image: linear-gradient(to right, rgba(48, 119, 234, 0.772), rgb(68, 0, 141));
+            color: white;
+            border: 0px;
+            border-radius: 5px;
+        }
+        button{
+            padding: 10px 20px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="box">
+                <h4 class="heading">Registration</h4>
+                <form action="" method="post">
+                    <div class="first">
+                        <label for="Full Name">Full Name</label>
+                        <input type="text" name="full name" placeholder="Enter Your Full Name" id="" style="margin-right: 10px;">
+                        <label for="username" style="margin-right: 45px;">UserName</label>
+                        <input type="text" name="username" placeholder="Enter Your UserName" id="">
+                    </div>
+
+                    <div class="second">
+                        <label for="email" style="margin-right: 28px;">Email</label>
+                        <input type="email" name="full name" placeholder="Enter Your Email" id="" style="margin-right: 10px;">
+                        <label for="Username" style="margin-right: 19px;">Phone Number</label>
+                        <input type="text" name="phone" placeholder="Enter Your Phone Number" id="">
+                    </div>
+
+                    <div class="third">
+                        <label for="password" style="margin-right: 3px;">Password</label>
+                        <input type="password" name="password" placeholder="Enter Your Password" id="" style="margin-right: 10px;">
+                        <label for="confirm password">Confirm Password</label>
+                        <input type="password" name="username" placeholder="Confirm Your Password" id="">
+                    </div>
+                    <div class="fourth">
+                        <label for="genger">Gender</label>
+                        <input type="radio" name="male" value="Male" id=""> Male
+                        <input type="radio" name="male" value="Male" id=""> Female
+                        <input type="radio" name="male" value="Male" id=""> Other
+                    </div>
+                    <button class="cancel">Cancel</button>
+                    <button class="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
